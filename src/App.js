@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { store } from './Store/store';
+import Router from './Router';
 
 class App extends Component {
   render() {
     return (
      <Provider store={store}>
-       <p>This will be the sample app</p>
+       <Router></Router>
      </Provider>
     );
   }
